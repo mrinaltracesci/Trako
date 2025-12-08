@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "app.tracesci.trako.app-debug-36:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "app.tracesci.trako.app-main-31:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "app.tracesci.trako.app-debug-36:/drawable-v21_launch_background.xml.flat",
+        "source": "app.tracesci.trako.app-main-31:/drawable-v21/launch_background.xml"
+    },
+    {
+        "merged": "app.tracesci.trako.app-debug-36:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "app.tracesci.trako.app-main-31:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "app.tracesci.trako.app-debug-36:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "app.tracesci.trako.app-main-31:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "app.tracesci.trako.app-debug-36:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "app.tracesci.trako.app-main-31:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "app.tracesci.trako.app-debug-36:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "app.tracesci.trako.app-main-31:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "app.tracesci.trako.app-debug-36:/xml_network_security_config.xml.flat",
+        "source": "app.tracesci.trako.app-main-31:/xml/network_security_config.xml"
+    }
+]

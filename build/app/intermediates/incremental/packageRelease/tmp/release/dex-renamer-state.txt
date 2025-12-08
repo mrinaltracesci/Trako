@@ -1,0 +1,4 @@
+#Tue Sep 16 17:24:34 IST 2025
+base.0=/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

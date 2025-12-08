@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app"
+    name=":app"
+    type="APP"
+    maven="android:app:"
+    agpVersion="8.3.2"
+    buildFolder="/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/build/app"
+    bootClassPath="/Users/Tracesci/Library/Android/sdk/platforms/android-34/android.jar:/Users/Tracesci/Library/Android/sdk/build-tools/34.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-34">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

@@ -1,0 +1,31 @@
+<variant
+    name="release"
+    package="fman.ge.smart_auth"
+    minSdkVersion="16"
+    targetSdkVersion="16"
+    mergedManifest="/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/build/smart_auth/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml"
+    proguardFiles="/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/build/smart_auth/intermediates/default_proguard_files/global/proguard-android.txt-8.3.2"
+    partialResultsDir="/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/build/smart_auth/intermediates/lint_vital_partial_results/release/lintVitalAnalyzeRelease/out"
+    desugaredMethodsFiles="/Users/Tracesci/.gradle/caches/transforms-4/4b0051d6a00c23a4290d1cc6a4ad848d/transformed/D8BackportedDesugaredMethods.txt">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifests="src/main/AndroidManifest.xml"
+        javaDirectories="src/main/java:src/main/kotlin:src/release/java:src/release/kotlin"
+        resDirectories="src/main/res:src/release/res"
+        assetsDirectories="src/main/assets:src/release/assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <artifact
+      classOutputs="/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/build/smart_auth/intermediates/javac/release/compileReleaseJavaWithJavac/classes:/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/build/smart_auth/tmp/kotlin-classes/release:/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/build/smart_auth/intermediates/compile_r_class_jar/release/generateReleaseRFile/R.jar"
+      type="MAIN"
+      applicationId="fman.ge.smart_auth"
+      generatedSourceFolders="/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/build/smart_auth/generated/ap_generated_sources/release/out"
+      generatedResourceFolders="/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/build/smart_auth/generated/res/resValues/release"
+      desugaredMethodsFiles="/Users/Tracesci/.gradle/caches/transforms-4/4b0051d6a00c23a4290d1cc6a4ad848d/transformed/D8BackportedDesugaredMethods.txt">
+  </artifact>
+</variant>

@@ -1,0 +1,337 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="app.tracesci.trako"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:4:5-66
+11-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:4:22-64
+12    <!--
+13         Required to query activities that can process text, see:
+14         https://developer.android.com/training/package-visibility and
+15         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+16
+17         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+18    -->
+19    <queries>
+19-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:45:5-50:15
+20        <intent>
+20-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:46:9-49:18
+21            <action android:name="android.intent.action.PROCESS_TEXT" />
+21-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:47:13-72
+21-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:47:21-70
+22
+23            <data android:mimeType="text/plain" />
+23-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:48:13-50
+23-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:48:19-48
+24        </intent>
+25    </queries>
+26
+27    <uses-permission android:name="android.permission.CAMERA" />
+27-->[:mobile_scanner] /Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/build/mobile_scanner/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:7:5-65
+27-->[:mobile_scanner] /Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/build/mobile_scanner/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:7:22-62
+28
+29    <uses-feature
+29-->[:mobile_scanner] /Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/build/mobile_scanner/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:9:5-11:36
+30        android:name="android.hardware.camera"
+30-->[:mobile_scanner] /Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/build/mobile_scanner/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:10:9-47
+31        android:required="false" />
+31-->[:mobile_scanner] /Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/build/mobile_scanner/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:11:9-33
+32
+33    <permission
+33-->[androidx.core:core:1.13.1] /Users/Tracesci/.gradle/caches/transforms-4/c8d3cd71dafcd993efcf32e89aaf67fe/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+34        android:name="app.tracesci.trako.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+34-->[androidx.core:core:1.13.1] /Users/Tracesci/.gradle/caches/transforms-4/c8d3cd71dafcd993efcf32e89aaf67fe/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+35        android:protectionLevel="signature" />
+35-->[androidx.core:core:1.13.1] /Users/Tracesci/.gradle/caches/transforms-4/c8d3cd71dafcd993efcf32e89aaf67fe/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+36
+37    <uses-permission android:name="app.tracesci.trako.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+37-->[androidx.core:core:1.13.1] /Users/Tracesci/.gradle/caches/transforms-4/c8d3cd71dafcd993efcf32e89aaf67fe/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+37-->[androidx.core:core:1.13.1] /Users/Tracesci/.gradle/caches/transforms-4/c8d3cd71dafcd993efcf32e89aaf67fe/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+38    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+39    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+39-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/Tracesci/.gradle/caches/transforms-4/b8511f6074fb04d3f96a73c8603180dd/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+39-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/Tracesci/.gradle/caches/transforms-4/b8511f6074fb04d3f96a73c8603180dd/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+40
+41    <application
+42        android:name="android.app.Application"
+42-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:8:9-42
+43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+43-->[androidx.core:core:1.13.1] /Users/Tracesci/.gradle/caches/transforms-4/c8d3cd71dafcd993efcf32e89aaf67fe/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+44        android:extractNativeLibs="true"
+45        android:icon="@mipmap/ic_launcher"
+45-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:11:9-43
+46        android:label="Trako"
+46-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:7:9-30
+47        android:networkSecurityConfig="@xml/network_security_config"
+47-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:9:9-69
+48        android:usesCleartextTraffic="true" >
+48-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:10:9-44
+49        <activity
+49-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:12:9-33:20
+50            android:name="app.tracesci.trako.MainActivity"
+50-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:13:13-41
+51            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+51-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:18:13-163
+52            android:exported="true"
+52-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:14:13-36
+53            android:hardwareAccelerated="true"
+53-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:19:13-47
+54            android:launchMode="singleTop"
+54-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:15:13-43
+55            android:taskAffinity=""
+55-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:16:13-36
+56            android:theme="@style/LaunchTheme"
+56-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:17:13-47
+57            android:windowSoftInputMode="adjustResize" >
+57-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:20:13-55
+58
+59            <!--
+60                 Specifies an Android theme to apply to this Activity as soon as
+61                 the Android process has started. This theme is visible to the user
+62                 while the Flutter UI initializes. After that, this theme continues
+63                 to determine the Window background behind the Flutter UI.
+64            -->
+65            <meta-data
+65-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:25:13-28:17
+66                android:name="io.flutter.embedding.android.NormalTheme"
+66-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:26:15-70
+67                android:resource="@style/NormalTheme" />
+67-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:27:15-52
+68
+69            <intent-filter>
+69-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:29:13-32:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:30:17-68
+70-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:30:25-66
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:31:17-76
+72-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:31:27-74
+73            </intent-filter>
+74        </activity>
+75        <!--
+76             Don't delete the meta-data below.
+77             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+78        -->
+79        <meta-data
+79-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:36:9-38:33
+80            android:name="flutterEmbedding"
+80-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:37:13-44
+81            android:value="2" />
+81-->/Users/Tracesci/Documents/GitHub/ApplicationProject/Trako_app/android/app/src/main/AndroidManifest.xml:38:13-30
+82        <!--
+83        Service for holding metadata. Cannot be instantiated.
+84        Metadata will be merged from other manifests.
+85        -->
+86        <service
+86-->[androidx.camera:camera-core:1.3.4] /Users/Tracesci/.gradle/caches/transforms-4/b2fedbc67f5d460afa729dfe82047fc4/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:29:9-33:78
+87            android:name="androidx.camera.core.impl.MetadataHolderService"
+87-->[androidx.camera:camera-core:1.3.4] /Users/Tracesci/.gradle/caches/transforms-4/b2fedbc67f5d460afa729dfe82047fc4/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:30:13-75
+88            android:enabled="false"
+88-->[androidx.camera:camera-core:1.3.4] /Users/Tracesci/.gradle/caches/transforms-4/b2fedbc67f5d460afa729dfe82047fc4/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:31:13-36
+89            android:exported="false" >
+89-->[androidx.camera:camera-core:1.3.4] /Users/Tracesci/.gradle/caches/transforms-4/b2fedbc67f5d460afa729dfe82047fc4/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:32:13-37
+90            <meta-data
+90-->[androidx.camera:camera-camera2:1.3.4] /Users/Tracesci/.gradle/caches/transforms-4/553a62d0abb507d0b6bf45247be4f4fb/transformed/jetified-camera-camera2-1.3.4/AndroidManifest.xml:30:13-32:89
+91                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+91-->[androidx.camera:camera-camera2:1.3.4] /Users/Tracesci/.gradle/caches/transforms-4/553a62d0abb507d0b6bf45247be4f4fb/transformed/jetified-camera-camera2-1.3.4/AndroidManifest.xml:31:17-103
+92                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+92-->[androidx.camera:camera-camera2:1.3.4] /Users/Tracesci/.gradle/caches/transforms-4/553a62d0abb507d0b6bf45247be4f4fb/transformed/jetified-camera-camera2-1.3.4/AndroidManifest.xml:32:17-86
+93        </service>
+94
+95        <activity
+95-->[com.google.android.gms:play-services-auth:20.4.0] /Users/Tracesci/.gradle/caches/transforms-4/009724540729c2aa817c0020d8afccc4/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:23:9-27:75
+96            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+96-->[com.google.android.gms:play-services-auth:20.4.0] /Users/Tracesci/.gradle/caches/transforms-4/009724540729c2aa817c0020d8afccc4/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:24:13-93
+97            android:excludeFromRecents="true"
+97-->[com.google.android.gms:play-services-auth:20.4.0] /Users/Tracesci/.gradle/caches/transforms-4/009724540729c2aa817c0020d8afccc4/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:25:13-46
+98            android:exported="false"
+98-->[com.google.android.gms:play-services-auth:20.4.0] /Users/Tracesci/.gradle/caches/transforms-4/009724540729c2aa817c0020d8afccc4/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:26:13-37
+99            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+99-->[com.google.android.gms:play-services-auth:20.4.0] /Users/Tracesci/.gradle/caches/transforms-4/009724540729c2aa817c0020d8afccc4/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:27:13-72
+100        <!--
+101            Service handling Google Sign-In user revocation. For apps that do not integrate with
+102            Google Sign-In, this service will never be started.
+103        -->
+104        <service
+104-->[com.google.android.gms:play-services-auth:20.4.0] /Users/Tracesci/.gradle/caches/transforms-4/009724540729c2aa817c0020d8afccc4/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:33:9-37:51
+105            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+105-->[com.google.android.gms:play-services-auth:20.4.0] /Users/Tracesci/.gradle/caches/transforms-4/009724540729c2aa817c0020d8afccc4/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:34:13-89
+106            android:exported="true"
+106-->[com.google.android.gms:play-services-auth:20.4.0] /Users/Tracesci/.gradle/caches/transforms-4/009724540729c2aa817c0020d8afccc4/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:35:13-36
+107            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+107-->[com.google.android.gms:play-services-auth:20.4.0] /Users/Tracesci/.gradle/caches/transforms-4/009724540729c2aa817c0020d8afccc4/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:36:13-107
+108            android:visibleToInstantApps="true" />
+108-->[com.google.android.gms:play-services-auth:20.4.0] /Users/Tracesci/.gradle/caches/transforms-4/009724540729c2aa817c0020d8afccc4/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:37:13-48
+109        <service
+109-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/Tracesci/.gradle/caches/transforms-4/554e6e0a495e54a2a587b35c492e9006/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:9:9-15:19
+110            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+110-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/Tracesci/.gradle/caches/transforms-4/554e6e0a495e54a2a587b35c492e9006/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:10:13-91
+111            android:directBootAware="true"
+111-->[com.google.mlkit:common:18.11.0] /Users/Tracesci/.gradle/caches/transforms-4/7e712a6d9fa6800a94dafdf9920a387b/transformed/jetified-common-18.11.0/AndroidManifest.xml:17:13-43
+112            android:exported="false" >
+112-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/Tracesci/.gradle/caches/transforms-4/554e6e0a495e54a2a587b35c492e9006/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:11:13-37
+113            <meta-data
+113-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/Tracesci/.gradle/caches/transforms-4/554e6e0a495e54a2a587b35c492e9006/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:12:13-14:85
+114                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+114-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/Tracesci/.gradle/caches/transforms-4/554e6e0a495e54a2a587b35c492e9006/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:13:17-120
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/Tracesci/.gradle/caches/transforms-4/554e6e0a495e54a2a587b35c492e9006/transformed/jetified-play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:14:17-82
+116            <meta-data
+116-->[com.google.mlkit:vision-common:17.3.0] /Users/Tracesci/.gradle/caches/transforms-4/c55296b88128b39c99156f634dab1959/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
+117                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+117-->[com.google.mlkit:vision-common:17.3.0] /Users/Tracesci/.gradle/caches/transforms-4/c55296b88128b39c99156f634dab1959/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:13:17-124
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.mlkit:vision-common:17.3.0] /Users/Tracesci/.gradle/caches/transforms-4/c55296b88128b39c99156f634dab1959/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:14:17-82
+119            <meta-data
+119-->[com.google.mlkit:common:18.11.0] /Users/Tracesci/.gradle/caches/transforms-4/7e712a6d9fa6800a94dafdf9920a387b/transformed/jetified-common-18.11.0/AndroidManifest.xml:20:13-22:85
+120                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+120-->[com.google.mlkit:common:18.11.0] /Users/Tracesci/.gradle/caches/transforms-4/7e712a6d9fa6800a94dafdf9920a387b/transformed/jetified-common-18.11.0/AndroidManifest.xml:21:17-120
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.mlkit:common:18.11.0] /Users/Tracesci/.gradle/caches/transforms-4/7e712a6d9fa6800a94dafdf9920a387b/transformed/jetified-common-18.11.0/AndroidManifest.xml:22:17-82
+122        </service>
+123
+124        <provider
+124-->[com.google.mlkit:common:18.11.0] /Users/Tracesci/.gradle/caches/transforms-4/7e712a6d9fa6800a94dafdf9920a387b/transformed/jetified-common-18.11.0/AndroidManifest.xml:9:9-13:38
+125            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+125-->[com.google.mlkit:common:18.11.0] /Users/Tracesci/.gradle/caches/transforms-4/7e712a6d9fa6800a94dafdf9920a387b/transformed/jetified-common-18.11.0/AndroidManifest.xml:10:13-78
+126            android:authorities="app.tracesci.trako.mlkitinitprovider"
+126-->[com.google.mlkit:common:18.11.0] /Users/Tracesci/.gradle/caches/transforms-4/7e712a6d9fa6800a94dafdf9920a387b/transformed/jetified-common-18.11.0/AndroidManifest.xml:11:13-69
+127            android:exported="false"
+127-->[com.google.mlkit:common:18.11.0] /Users/Tracesci/.gradle/caches/transforms-4/7e712a6d9fa6800a94dafdf9920a387b/transformed/jetified-common-18.11.0/AndroidManifest.xml:12:13-37
+128            android:initOrder="99" />
+128-->[com.google.mlkit:common:18.11.0] /Users/Tracesci/.gradle/caches/transforms-4/7e712a6d9fa6800a94dafdf9920a387b/transformed/jetified-common-18.11.0/AndroidManifest.xml:13:13-35
+129
+130        <activity
+130-->[com.google.android.gms:play-services-base:18.5.0] /Users/Tracesci/.gradle/caches/transforms-4/9c962dabf8f6787d29221696478c0b45/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+131            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+131-->[com.google.android.gms:play-services-base:18.5.0] /Users/Tracesci/.gradle/caches/transforms-4/9c962dabf8f6787d29221696478c0b45/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+132            android:exported="false"
+132-->[com.google.android.gms:play-services-base:18.5.0] /Users/Tracesci/.gradle/caches/transforms-4/9c962dabf8f6787d29221696478c0b45/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+133            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+133-->[com.google.android.gms:play-services-base:18.5.0] /Users/Tracesci/.gradle/caches/transforms-4/9c962dabf8f6787d29221696478c0b45/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+134
+135        <meta-data
+135-->[com.google.android.gms:play-services-basement:18.4.0] /Users/Tracesci/.gradle/caches/transforms-4/2ebc3c577c34060be10de21ef55a040d/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+136            android:name="com.google.android.gms.version"
+136-->[com.google.android.gms:play-services-basement:18.4.0] /Users/Tracesci/.gradle/caches/transforms-4/2ebc3c577c34060be10de21ef55a040d/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+137            android:value="@integer/google_play_services_version" />
+137-->[com.google.android.gms:play-services-basement:18.4.0] /Users/Tracesci/.gradle/caches/transforms-4/2ebc3c577c34060be10de21ef55a040d/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+138
+139        <uses-library
+139-->[androidx.window:window:1.2.0] /Users/Tracesci/.gradle/caches/transforms-4/f2f31aee4a638d124714eb8507e8fa0b/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+140            android:name="androidx.window.extensions"
+140-->[androidx.window:window:1.2.0] /Users/Tracesci/.gradle/caches/transforms-4/f2f31aee4a638d124714eb8507e8fa0b/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+141            android:required="false" />
+141-->[androidx.window:window:1.2.0] /Users/Tracesci/.gradle/caches/transforms-4/f2f31aee4a638d124714eb8507e8fa0b/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+142        <uses-library
+142-->[androidx.window:window:1.2.0] /Users/Tracesci/.gradle/caches/transforms-4/f2f31aee4a638d124714eb8507e8fa0b/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+143            android:name="androidx.window.sidecar"
+143-->[androidx.window:window:1.2.0] /Users/Tracesci/.gradle/caches/transforms-4/f2f31aee4a638d124714eb8507e8fa0b/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+144            android:required="false" />
+144-->[androidx.window:window:1.2.0] /Users/Tracesci/.gradle/caches/transforms-4/f2f31aee4a638d124714eb8507e8fa0b/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+145
+146        <provider
+146-->[androidx.emoji2:emoji2:1.2.0] /Users/Tracesci/.gradle/caches/transforms-4/e996880f6db707a63813970e8de8ee3d/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+147            android:name="androidx.startup.InitializationProvider"
+147-->[androidx.emoji2:emoji2:1.2.0] /Users/Tracesci/.gradle/caches/transforms-4/e996880f6db707a63813970e8de8ee3d/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+148            android:authorities="app.tracesci.trako.androidx-startup"
+148-->[androidx.emoji2:emoji2:1.2.0] /Users/Tracesci/.gradle/caches/transforms-4/e996880f6db707a63813970e8de8ee3d/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+149            android:exported="false" >
+149-->[androidx.emoji2:emoji2:1.2.0] /Users/Tracesci/.gradle/caches/transforms-4/e996880f6db707a63813970e8de8ee3d/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+150            <meta-data
+150-->[androidx.emoji2:emoji2:1.2.0] /Users/Tracesci/.gradle/caches/transforms-4/e996880f6db707a63813970e8de8ee3d/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+151                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+151-->[androidx.emoji2:emoji2:1.2.0] /Users/Tracesci/.gradle/caches/transforms-4/e996880f6db707a63813970e8de8ee3d/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+152                android:value="androidx.startup" />
+152-->[androidx.emoji2:emoji2:1.2.0] /Users/Tracesci/.gradle/caches/transforms-4/e996880f6db707a63813970e8de8ee3d/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+153            <meta-data
+153-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/Tracesci/.gradle/caches/transforms-4/96706451ddee3f0ccd8e1ffbff3626a4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+154                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+154-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/Tracesci/.gradle/caches/transforms-4/96706451ddee3f0ccd8e1ffbff3626a4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+155                android:value="androidx.startup" />
+155-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/Tracesci/.gradle/caches/transforms-4/96706451ddee3f0ccd8e1ffbff3626a4/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+156            <meta-data
+156-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+157                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+157-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+158                android:value="androidx.startup" />
+158-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+159        </provider>
+160
+161        <receiver
+161-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+162            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+162-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+163            android:directBootAware="false"
+163-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+164            android:enabled="true"
+164-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+165            android:exported="true"
+165-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+166            android:permission="android.permission.DUMP" >
+166-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+167            <intent-filter>
+167-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+168                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+168-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+168-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+169            </intent-filter>
+170            <intent-filter>
+170-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+171                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+171-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+171-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+172            </intent-filter>
+173            <intent-filter>
+173-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+174                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+174-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+174-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+175            </intent-filter>
+176            <intent-filter>
+176-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+177                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+177-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+177-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/Tracesci/.gradle/caches/transforms-4/5c2048103b09b0d9a7f19d2a3716df9a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+178            </intent-filter>
+179        </receiver>
+180
+181        <service
+181-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/Tracesci/.gradle/caches/transforms-4/b8511f6074fb04d3f96a73c8603180dd/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+182            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+182-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/Tracesci/.gradle/caches/transforms-4/b8511f6074fb04d3f96a73c8603180dd/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+183            android:exported="false" >
+183-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/Tracesci/.gradle/caches/transforms-4/b8511f6074fb04d3f96a73c8603180dd/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+184            <meta-data
+184-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/Tracesci/.gradle/caches/transforms-4/b8511f6074fb04d3f96a73c8603180dd/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+185                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+185-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/Tracesci/.gradle/caches/transforms-4/b8511f6074fb04d3f96a73c8603180dd/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+186                android:value="cct" />
+186-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/Tracesci/.gradle/caches/transforms-4/b8511f6074fb04d3f96a73c8603180dd/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+187        </service>
+188        <service
+188-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/Tracesci/.gradle/caches/transforms-4/bab21815672cda335c27a1b81048d09a/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+189            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+189-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/Tracesci/.gradle/caches/transforms-4/bab21815672cda335c27a1b81048d09a/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+190            android:exported="false"
+190-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/Tracesci/.gradle/caches/transforms-4/bab21815672cda335c27a1b81048d09a/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+191            android:permission="android.permission.BIND_JOB_SERVICE" >
+191-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/Tracesci/.gradle/caches/transforms-4/bab21815672cda335c27a1b81048d09a/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+192        </service>
+193
+194        <receiver
+194-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/Tracesci/.gradle/caches/transforms-4/bab21815672cda335c27a1b81048d09a/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+195            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+195-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/Tracesci/.gradle/caches/transforms-4/bab21815672cda335c27a1b81048d09a/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+196            android:exported="false" />
+196-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/Tracesci/.gradle/caches/transforms-4/bab21815672cda335c27a1b81048d09a/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+197    </application>
+198
+199</manifest>
