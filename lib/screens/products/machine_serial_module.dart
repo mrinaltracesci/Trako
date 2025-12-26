@@ -62,6 +62,7 @@ class _MachineSerialModuleState extends State<MachineSerialModule> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: RefreshIndicator(
+
         onRefresh: refreshMachineList,
         child: Column(
           children: [
@@ -105,14 +106,18 @@ class _MachineSerialModuleState extends State<MachineSerialModule> {
                     ),
                     child: IconButton(
                       onPressed: () async {
-                        await Navigator.push(
+                        final bool? result = await Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder: (context) => AddMachine(),
                           ),
                         );
-                        refreshMachineList();
+
+                        if (result == true) {
+                          refreshMachineList();
+                        }
                       },
+
                       icon: Icon(
                         Icons.add,
                         color: Colors.white,
@@ -143,6 +148,7 @@ class _MachineSerialModuleState extends State<MachineSerialModule> {
                       } else {
                         return MachineList(
                           initialMachines: machines,
+                          key: ValueKey(machines.length),
                           onRefresh: refreshMachineList,
                           onDelete: (machineId) async {
                             try {
@@ -568,15 +574,21 @@ class _MachineListState extends State<MachineList>
                     const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               ),
               child: const Text('Edit'),
-              onPressed: () {
+              onPressed: () async {
                 Navigator.of(context).pop();
-                Navigator.push(
+
+                final bool? result = await Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => AddMachine(machine: machine),
                   ),
                 );
+
+                if (result == true) {
+                  widget.onRefresh();
+                }
               },
+
             ),
           ],
         );

@@ -158,14 +158,18 @@ class _ClientModuleState extends State<ClientModule> {
                   GradientIconButton(
                     icon: Icons.add,
                     onPressed: () async {
-                      await Navigator.push(
+                      final bool? result = await Navigator.push(
                         context,
                         MaterialPageRoute(
                           builder: (context) => const AddClient(),
                         ),
                       );
-                      refreshClientsList();
+
+                      if (result == true) {
+                        refreshClientsList();
+                      }
                     },
+
                   ),
                 ],
               ),
@@ -191,12 +195,13 @@ class _ClientModuleState extends State<ClientModule> {
                       } else {
                         return ClientList(
                           initialClients: initialClients,
+                          key: ValueKey(initialClients.length),
                           search: _searchQuery,
                           onRefresh: refreshClientsList,
                           onDelete: (String? clientId, int index) async {
                              softDeleteClient(clientId);
                             // Refresh the list after deletion
-                            refreshClientsList();
+                            // refreshClientsList();
                           },
                         );
                       }
@@ -661,15 +666,21 @@ class _ClientListState extends State<ClientList> with SingleTickerProviderStateM
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               ),
               child: const Text('Edit'),
-              onPressed: () {
+              onPressed: () async {
                 Navigator.of(context).pop();
-                Navigator.push(
+
+                final bool? result = await Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => AddClient(client: client),
                   ),
                 );
+
+                if (result == true) {
+                  widget.onRefresh();
+                }
               },
+
             ),
           ],
         );

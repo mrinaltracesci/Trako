@@ -99,14 +99,19 @@ class _UsersModuleState extends State<UsersModule> {
                             ),
                             child: IconButton(
                               onPressed: () async {
-                                await Navigator.push(
+
+                                final bool? result = await Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => const AddUser(),
+                                    builder: (context) =>const AddUser(),
                                   ),
                                 );
-                                refreshUsersList();
+
+                                if (result == true) {
+                                  refreshUsersList();
+                                }
                               },
+
                               icon: const Icon(
                                 Icons.add,
                                 color: Colors.white,
@@ -141,6 +146,7 @@ class _UsersModuleState extends State<UsersModule> {
                           padding: const EdgeInsets.symmetric(horizontal: 16.0),
                           child: UserList(
                             initialUsers: users,
+                            key: ValueKey(users.length),
                             onRefresh: refreshUsersList,
                           ),
                         );
@@ -430,15 +436,22 @@ class _UserListState extends State<UserList> with SingleTickerProviderStateMixin
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               ),
               child: const Text('Edit'),
-              onPressed: () {
+              onPressed: () async {
                 Navigator.of(context).pop();
-                Navigator.push(
+
+                final bool? result = await Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => AddUser(user: user),
                   ),
                 );
+
+                if (result == true) {
+                  widget.onRefresh();
+                }
               },
+
+
             ),
           ],
         );

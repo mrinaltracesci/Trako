@@ -56,10 +56,11 @@ class _HomeScreenState extends State<HomeScreen> {
           },
           children: <Widget>[
             const CategoriesDashboard(),
-            SupplyChain(),
             MachineModelModule(),
             MachineSerialModule(),
+
             const ClientModule(),
+            SupplyChain(),
             Acknowledgement(),
             TonerRequest(),
             MyReportScreen(),
@@ -178,30 +179,31 @@ class _HomeScreenState extends State<HomeScreen> {
                     text: 'Dashboard',
                     index: 0,
                   ),
-                  if(dispatchItem || receiveItem)
-                    _buildDrawerItem(
-                    icon: Icons.account_tree_outlined,
-                    text: 'Supply Chain',
-                    index: 1,
-                    ),
                   if (showMachinesItem)
                     _buildDrawerItem(
                       icon: Icons.add_business,
                       text: 'Machines Models',
-                      index: 2,
+                      index: 1,
                     ),
                   if (showMachinesItem)
                     _buildDrawerItem(
                       icon: Icons.model_training,
                       text: 'Machines Serials ',
-                      index: 3,
+                      index: 2,
                     ),
                   if (showClientItem)
                     _buildDrawerItem(
                       icon: Icons.person,
                       text: 'Clients',
+                      index: 3,
+                    ),
+                  if(dispatchItem || receiveItem)
+                    _buildDrawerItem(
+                      icon: Icons.account_tree_outlined,
+                      text: 'Supply Chain',
                       index: 4,
                     ),
+
                   if (acknowledgeItem)
                     _buildDrawerItem(
                       icon: Icons.quick_contacts_mail_outlined,

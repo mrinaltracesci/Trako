@@ -116,13 +116,17 @@ class _MachineModelModuleState extends State<MachineModelModule> {
                     ),
                     child: IconButton(
                       onPressed: () async {
-                        await Navigator.push(
+                        final bool? result = await Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder: (context) => AddModel(),
                           ),
                         );
-                        refreshMachineList();
+
+                        if (result == true) {
+                          refreshMachineList();
+                        }
+
                       },
                       icon: Icon(
                         Icons.add,
@@ -153,6 +157,7 @@ class _MachineModelModuleState extends State<MachineModelModule> {
                         );
                       } else {
                         return MachineList(
+                          key: ValueKey(machines.length),
                           initialMachines: machines,
                           onRefresh: refreshMachineList,
                           onDelete: (machineId) async {
@@ -619,15 +624,21 @@ class _MachineListState extends State<MachineList> with SingleTickerProviderStat
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               ),
               child: const Text('Edit'),
-              onPressed: () {
+              onPressed: () async {
                 Navigator.of(context).pop();
-                Navigator.push(
+
+                final bool? result = await Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => AddModel(machineData: machine),
                   ),
                 );
+
+                if (result == true) {
+                  widget.onRefresh();
+                }
               },
+
             ),
           ],
         );
