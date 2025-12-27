@@ -715,7 +715,7 @@ class _LocationSelectDialogState extends State<LocationSelectDialog> {
             if (selectedValue != null)
               GestureDetector(
                 onTap: onClear,
-                child: Text(
+                child: const Text(
                   'Clear',
                   style: TextStyle(
                     color: Colors.red,
@@ -725,14 +725,14 @@ class _LocationSelectDialogState extends State<LocationSelectDialog> {
               ),
           ],
         ),
-        SizedBox(height: 8.0),
+        const SizedBox(height: 8.0),
 
         // Dropdown
         DropdownButtonFormField<String>(
           value: selectedValue,
           isExpanded: true, // This helps prevent overflow
           decoration: InputDecoration(
-            contentPadding: EdgeInsets.symmetric(
+            contentPadding: const EdgeInsets.symmetric(
                 horizontal: 12.0,
                 vertical: 8.0
             ),
@@ -751,7 +751,7 @@ class _LocationSelectDialogState extends State<LocationSelectDialog> {
             style: TextStyle(color: Colors.grey.shade600),
           ),
           dropdownColor: Colors.white,
-          style: TextStyle(color: Colors.black87),
+          style: const TextStyle(color: Colors.black87),
           onChanged: onChanged,
           items: items.map((item) {
             return DropdownMenuItem<String>(

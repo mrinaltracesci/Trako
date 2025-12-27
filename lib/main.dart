@@ -10,7 +10,6 @@ import 'package:Trako/screens/home/client/add_client.dart';
 import 'package:Trako/screens/home/home.dart';
 import 'package:Trako/screens/products/add_machine.dart';
 import 'package:Trako/screens/profile/profile.dart';
-import 'package:Trako/screens/supply_chian/supplychain.dart';
 import 'package:Trako/screens/users/accessibility.dart';
 import 'package:Trako/screens/users/add_user.dart';
 import 'package:Trako/screens/users/machine_status.dart';

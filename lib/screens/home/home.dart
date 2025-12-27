@@ -10,6 +10,7 @@ import 'package:Trako/screens/reports/reports.dart';
 import 'package:Trako/screens/supply_chian/supplychain.dart';
 import 'package:Trako/screens/users/users.dart';
 
+import '../../utils/app_const.dart';
 import '../authFlow/signin.dart';
 import '../customer_acknowledgement/client_acknowledgement.dart';
 import '../products/machine_model_module.dart';
@@ -253,14 +254,24 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   SizedBox(height: 30,),
                   const Center(
-                    child: Text(
-                      'Powered by Tracesci.in',
-                      style: TextStyle(
-                        fontSize: 12.0, // Adjust the font size as needed
-                        color: Colors.white, // Adjust the color to match your app's theme
-                        fontStyle: FontStyle.italic, // Optionally italicize the text
+                    child: Column(children: [
+                      Text(
+                        'Powered by Tracesci.in',
+                        style: TextStyle(
+                          fontSize: 12.0, // Adjust the font size as needed
+                          color: Colors.white, // Adjust the color to match your app's theme
+                          fontStyle: FontStyle.italic, // Optionally italicize the text
+                        ),
                       ),
-                    ),
+                      Text(
+                        AppConstants.appVersion,
+                        style: TextStyle(
+                          fontSize: 12.0, // Adjust the font size as needed
+                          color: Colors.white, // Adjust the color to match your app's theme
+                          fontStyle: FontStyle.italic, // Optionally italicize the text
+                        ),
+                      ),
+                    ],)
                   )
                 ],
               );

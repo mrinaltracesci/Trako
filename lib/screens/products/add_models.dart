@@ -170,18 +170,18 @@ class _AddModelState extends State<AddModel> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10.0),
               child: IconButton(
-                icon: Icon(Icons.person),
+                icon: const Icon(Icons.person),
                 onPressed: () {
                   Navigator.pushNamed(context, '/profile');
                 },
               ),
             ),
-            SizedBox(width: 7),
+            const SizedBox(width: 7),
           ],
         ),
         body: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 26.0),
+            padding: const EdgeInsets.symmetric(horizontal: 26.0),
             child: Form(
               key: _formKey,
               child: Column(
@@ -193,7 +193,7 @@ class _AddModelState extends State<AddModel> {
                     child: Text(
                       widget.machineData != null ? "Update Model:" : "Add New Model:",
                       textAlign: TextAlign.center,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 24.0,
                         color: colorMixGrad,
                         fontWeight: FontWeight.w600,
@@ -203,14 +203,14 @@ class _AddModelState extends State<AddModel> {
                   const SizedBox(height: 30),
 
                   // Model Name Section
-                  Text(
+                  const Text(
                     "Model Name",
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(height: 8),
+                  const SizedBox(height: 8),
                   CustomTextField(
                     controller: machine_name_Controller,
                     hintText: 'Enter model name',

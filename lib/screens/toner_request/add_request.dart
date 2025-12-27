@@ -535,17 +535,17 @@ class CustomTextField extends StatelessWidget {
         hintStyle: TextStyle(color: Colors.grey.shade600), // Adjust hint text color
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: Colors.black),
+          borderSide: const BorderSide(color: Colors.black),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: Colors.black),
+          borderSide: const BorderSide(color: Colors.black),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: colorMixGrad),
+          borderSide: const BorderSide(color: colorMixGrad),
         ),
-        contentPadding: EdgeInsets.symmetric(vertical: 14, horizontal: 16),
+        contentPadding: const EdgeInsets.symmetric(vertical: 14, horizontal: 16),
         filled: true,
         fillColor: Colors.white,
       ),
@@ -580,17 +580,17 @@ class ColorSpinner extends StatelessWidget {
       decoration: InputDecoration(
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: Colors.black),
+          borderSide:const  BorderSide(color: Colors.black),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: Colors.black),
+          borderSide: const BorderSide(color: Colors.black),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: colorMixGrad),
+          borderSide:const  BorderSide(color: colorMixGrad),
         ),
-        contentPadding: EdgeInsets.symmetric(vertical: 14, horizontal: 16),
+        contentPadding: const EdgeInsets.symmetric(vertical: 14, horizontal: 16),
         filled: true,
         fillColor: Colors.white,
       ),
@@ -600,7 +600,7 @@ class ColorSpinner extends StatelessWidget {
         color: Colors.black,
       ),
       isExpanded: true,
-      icon: Icon(Icons.arrow_drop_down, color: colorMixGrad), // Custom dropdown icon color
+      icon: const Icon(Icons.arrow_drop_down, color: colorMixGrad), // Custom dropdown icon color
     );
   }
 }
@@ -610,7 +610,7 @@ class QuantitySelector extends StatefulWidget {
   final int initialValue;
   final ValueChanged<int> onChanged;
 
-  QuantitySelector({Key? key, this.initialValue = 1, required this.onChanged}) : super(key: key);
+   QuantitySelector({Key? key, this.initialValue = 1, required this.onChanged}) : super(key: key);
 
   @override
   _QuantitySelectorState createState() => _QuantitySelectorState();
